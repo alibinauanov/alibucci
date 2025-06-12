@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-2xl px-4">
-      <div className="bg-background/80 backdrop-blur-md border border-border rounded-full shadow-lg">
+      <div className="bg-background/80 backdrop-blur-md border border-border md:rounded-full rounded-xl shadow-lg">
         <div className="flex justify-between items-center h-14 px-6">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 font-bold text-lg text-foreground hover:text-primary transition-colors">
