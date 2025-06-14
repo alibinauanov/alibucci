@@ -74,7 +74,7 @@ const education = [
   {
     degree: 'Bachelor of Science in Computer Science',
     school: 'New York University Shanghai',
-    location: 'Shanghai, CHina',
+    location: 'Shanghai, China',
     period: '2021 - 2025',
     details: 'Relevant coursework: Software Engineering, Computer Architecture, Data Structures, Algorithms, Databases, Artificial Intelligence, Operating Systems, Information Visualization. Completed capstone on Bitcoin price prediction using sentiment analysis.'
   }

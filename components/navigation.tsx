@@ -6,6 +6,7 @@ import { Code2, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-14 px-6">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 font-bold text-lg text-foreground hover:text-primary transition-colors">
-            <Code2 className="h-6 w-6 text-primary" />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
             <span>alibucci</span>
           </Link>
 
