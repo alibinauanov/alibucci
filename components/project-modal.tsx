@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, X } from 'lucide-react';
+import Image from 'next/image';
 import { Project } from './project-card';
 
 interface ProjectModalProps {
@@ -26,9 +27,11 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
         
         <div className="space-y-6">
           <div className="relative rounded-lg overflow-hidden">
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={800}
+              height={256}
               className="w-full h-64 object-cover"
             />
             {project.featured && (
