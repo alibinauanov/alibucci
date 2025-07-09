@@ -5,30 +5,55 @@ import ProjectCard, { Project } from '@/components/project-card';
 import ProjectModal from '@/components/project-modal';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import XLogo from '../assets/X-Logo.png';
 
 const projects: Project[] = [
   {
     id: '1',
+    title: 'X (Twitter) Clone - Full Stack App',
+    description: 'A modern Twitter/X clone built with Next.js 15, delivering real-time features, rich user interactions, and scalable architecture.',
+    longDescription: 'This full-stack social media platform replicates core Twitter functionalities using a modern tech stack. Built with Next.js 15, React 18, TypeScript, and Tailwind CSS on the frontend, and Prisma ORM with MySQL/PostgreSQL on the backend, it supports real-time notifications via Socket.io, infinite scrolling, and advanced user profiles. Authentication is powered by Clerk with GitHub/Google OAuth, and media is optimized using ImageKit CDN. The app is deployable via Vercel or Docker, and designed for performance, security, and developer-friendly extensibility.',
+    image: XLogo,
+    technologies: [
+      'Next.js 15',
+      'React 18',
+      'TypeScript',
+      'Tailwind CSS',
+      'Prisma ORM',
+      'MySQL',
+      'PostgreSQL',
+      'Socket.io',
+      'Clerk',
+      'ImageKit',
+      'Docker'
+    ],
+    githubUrl: 'https://github.com/alibinauanov/x-twitter-clone',
+    liveUrl: 'https://x-twitter-clone-production.up.railway.app/',
+    featured: true
+  },
+  {
+    id: '2',
     title: 'CanQr – Quantum Drug Optimization',
     description: 'A hybrid quantum-classical framework for drug optimization using quantum chemistry and variational quantum algorithms.',
     longDescription: 'CanQr is a cutting-edge framework that combines classical quantum chemistry simulations (via PySCF) with quantum computing techniques (VQE using PennyLane) to optimize drug molecules for selective binding. The system simulates molecule-target interactions with an emphasis on maximizing efficacy against disease sites while minimizing harm to healthy tissue. This dual-approach enables precise binding energy calculations and efficient candidate screening in pharmaceutical research.',
     image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Python', 'PySCF', 'PennyLane', 'Quantum Computing', 'VQE', 'Molecular Simulation'],
     githubUrl: 'https://github.com/alibinauanov/hackathon2025-canQr',
+
     featured: true
   },
   {
-    id: '2',
+    id: '3',
     title: 'Bitcoin Price Prediction with Sentiment Analysis',
     description: 'Predictive modeling of Bitcoin price using sentiment analysis and ensemble learning on social media data.',
     longDescription: 'This capstone project combines social media sentiment data with Bitcoin price indicators to forecast market trends. Using VADER, TextBlob, and BERT for sentiment scoring, and integrating financial metrics, the system feeds data into a Random Forest ensemble and an LSTM model for time-series prediction. The model achieved 78% accuracy and provided insights into sentiment-driven price volatility.',
-    image: 'https://images.pexels.com/photos/5989937/pexels-photo-5989937.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'BERT', 'LSTM', 'Random Forest', 'VADER', 'TextBlob'],
     githubUrl: 'https://github.com/alibinauanov/Bitcoin-Price-Prediction-Using-Sentiment-Analysis-and-Ensemble-Methods',
     featured: true
   },
   {
-    id: '3',
+    id: '4',
     title: 'Movix – Movie Database Web App',
     description: 'Interactive movie database app using React, Redux, and SCSS with dynamic API integration and modern UI.',
     longDescription: 'Movix is a sleek and responsive web application for browsing and discovering movies. Built with React and Redux, the app features component-based architecture, state management, API integration, and dynamic rendering. The app showcases advanced UI interactivity and clean SCSS styling, offering a smooth user experience for movie lovers.',
@@ -38,11 +63,11 @@ const projects: Project[] = [
     liveUrl: 'https://movie-app-alibi.vercel.app/'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Ticket Reservation System',
     description: 'A Python-based ticket booking system with Flask frontend and MySQL backend, developed for efficient event reservations.',
     longDescription: 'Developed as a final project, this system manages ticket reservations with a Python backend and Flask-powered frontend. The project integrates with MySQL for persistent storage and supports key operations like booking, cancelation, and seat management. Designed for simplicity and scalability, it runs locally with XAMPP for backend services.',
-    image: 'https://tse4.mm.bing.net/th?id=OIP.de2pNea2_c--85BO9XXwFwHaEM&pid=Api',
+    image: 'https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Python', 'Flask', 'MySQL', 'XAMPP', 'HTML/CSS'],
     githubUrl: 'https://github.com/alibinauanov/ticket_booking'
   }
@@ -63,7 +88,7 @@ export default function Projects() {
             My Projects
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Here's a collection of projects I've worked on, ranging from full-stack web applications 
+            Here&apos;s a collection of projects I&apos;ve worked on, ranging from full-stack web applications 
             to AI-powered solutions.
           </p>
         </div>

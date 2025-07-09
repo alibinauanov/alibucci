@@ -4,13 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Eye } from 'lucide-react';
+import Image, { StaticImageData } from 'next/image';
 
 export interface Project {
   id: string;
   title: string;
   description: string;
   longDescription: string;
-  image: string;
+  image: string | StaticImageData;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
@@ -26,9 +27,11 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-border bg-card/50 backdrop-blur-sm overflow-hidden">
       <div className="relative overflow-hidden">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={400}
+          height={192}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         {project.featured && (
