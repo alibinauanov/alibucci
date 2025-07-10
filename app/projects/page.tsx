@@ -12,7 +12,7 @@ const projects: Project[] = [
     id: '1',
     title: 'X (Twitter) Clone - Full Stack App',
     description: 'A modern Twitter/X clone built with Next.js 15, delivering real-time features, rich user interactions, and scalable architecture.',
-    longDescription: 'This full-stack social media platform replicates core Twitter functionalities using a modern tech stack. Built with Next.js 15, React 18, TypeScript, and Tailwind CSS on the frontend, and Prisma ORM with MySQL/PostgreSQL on the backend, it supports real-time notifications via Socket.io, infinite scrolling, and advanced user profiles. Authentication is powered by Clerk with GitHub/Google OAuth, and media is optimized using ImageKit CDN. The app is deployable via Vercel or Docker, and designed for performance, security, and developer-friendly extensibility.',
+    longDescription: 'This full-stack social media platform replicates core Twitter functionalities using a modern tech stack. Built with Next.js 15, React 18, TypeScript, and Tailwind CSS on the frontend, and Prisma ORM with MySQL/PostgreSQL on the backend, it supports real-time notifications via Socket.io, infinite scrolling, and advanced user profiles. Authentication is powered by Clerk with GitHub/Google OAuth, and media is optimized using ImageKit CDN. The app is deployable via Vercel and Docker, and designed for performance, security, and developer-friendly extensibility.',
     image: XLogo,
     technologies: [
       'Next.js 15',
