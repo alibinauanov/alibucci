@@ -38,11 +38,11 @@ const experiences = [
   },
   {
     id: '3',
-    title: 'Software Engineering Intern',
+    title: 'Software Engineer',
     company: 'Metana',
     location: 'Chicago, IL',
     period: 'Jul 2023 – Aug 2023',
-    type: 'Internship',
+    type: 'Contract Job',
     description:
       'Developed a content analysis API combining web scraping and summarization. Enhanced backend reliability and system latency through architecture improvements.',
     achievements: [
